@@ -319,3 +319,53 @@ html {
     margin-bottom: 3rem;
 }
 
+.container-options {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+.container-options span{
+    color: var(--green);
+    background-color: var(--white);
+    padding: .7rem 3rem;
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+.container-options span:hover {
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.container-options span.active {
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+/** PRODUCTS */
+
+.container-products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 3rem;
+}
+
+.card-product {
+    background-color: var(--white);
+    padding: 2rem 3rem;
+    border-radius: 5rem;
+    cursor: pointer;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+.container-img {
+    position: relative;
+}
+
+.container-img img {
+    width: 100%;
+}
