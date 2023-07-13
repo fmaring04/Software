@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Mali&family=Overpass:wght@200&family=Roboto+Condensed&display=swap');
 
+:root {
+    --blue: #284B63;
+    --green: #3C6E71;
+    --white: #FFFFFF;
+    --grey: #D9D9D9;
+    --black: #353535;
+}
+
 html {
     font-size: 62.5%;
     font-family: 'Overpass';
@@ -20,7 +28,7 @@ html {
 /* HEADER */
 
 .container-hero {
-    background-color: rgb(231, 221, 207);
+    background-color: var(--blue);
 }
 
 .hero {
@@ -38,12 +46,12 @@ html {
 
 .container-logo i {
     font-size: 3rem;
-    color: rgb(170, 176, 192);
+    color: var(--grey);
 }
 
 .container-logo h1 a {
     text-decoration: none;
-    color: rgb(170, 176, 192);
+    color: var(--grey);
     font-size: 3rem;
     text-transform: uppercase;
     letter-spacing: -1px;
@@ -57,18 +65,25 @@ html {
 
 .container-user .fa-user{
     font-size: 3rem;
-    color: rgb(170, 176, 192);
+    color: var(--grey);
     padding-right: 2.5rem;
-    border-right: 1px solid rgb(170, 176, 192);
+    border-right: 1px solid var(--grey);
 }
 
 .container-user .fa-basket-shopping {
     font-size: 3rem;
-    color: rgb(170, 176, 192);
+    color: var(--grey);
     padding-left: 1rem;
 }
 
 .content-shopping-cart {
     display: flex;
     flex-direction: column;
+    color: var(--grey);
+}
+
+/* NAVBAR */
+
+.container-navbar {
+    background-color: var(--green);
 }
