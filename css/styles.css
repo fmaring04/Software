@@ -28,7 +28,7 @@ html {
 /* HEADER */
 
 .container-hero {
-    background-color: var(--blue);
+    background-color: var(--white);
 }
 
 .hero {
@@ -46,12 +46,12 @@ html {
 
 .container-logo i {
     font-size: 3rem;
-    color: var(--grey);
+    color: var(--black);
 }
 
 .container-logo h1 a {
     text-decoration: none;
-    color: var(--grey);
+    color: var(--black);
     font-size: 3rem;
     text-transform: uppercase;
     letter-spacing: -1px;
@@ -65,25 +65,122 @@ html {
 
 .container-user .fa-user{
     font-size: 3rem;
-    color: var(--grey);
+    color: var(--black);
     padding-right: 2.5rem;
-    border-right: 1px solid var(--grey);
+    border-right: 1px solid var(--black);
 }
 
 .container-user .fa-basket-shopping {
     font-size: 3rem;
-    color: var(--grey);
+    color: var(--black);
     padding-left: 1rem;
 }
 
 .content-shopping-cart {
     display: flex;
     flex-direction: column;
-    color: var(--grey);
+    color: var(--black);
 }
 
 /* NAVBAR */
 
 .container-navbar {
-    background-color: var(--green);
+    background-color: var(--blue);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.navbar .fa-bars {
+    display: none;
+}
+
+.menu {
+    display: flex;
+    gap: 2rem;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: var(--white);
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.menu a::after {
+    content: '';
+    width: 1.5rem;
+    height: 1px;
+    background-color: var(--white);
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    opacity: 0;
+    transition: all .3s ease;
+}
+
+.menu a:hover::after {
+    opacity: 1;
+}
+
+.menu a:hover {
+    color: var(--white);
+}
+
+.search-form {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 2px solid var(--white);
+    border-radius: 2rem;
+    background-color: var(--white);
+    height: 3rem;
+    overflow: hidden;
+}
+
+.search-form input {
+    outline: none;
+    font-family: inherit;
+    border: none;
+    width: 25rem;
+    font-size: 1.4rem;
+    padding: 0 2rem;
+    color: var(--black);
+    cursor: pointer;
+}
+
+.search-from input::-webkit-search-cancel-button {
+    appearance: none;
+}
+
+.search-form .btn-search {
+    border: none;
+    background-color: var(--blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 5px;
+}
+
+.btn-search i{
+    font-size: 1.5rem;
+    color: var(--white);
+}
+
+/* BANNER */
+
+.banner {
+    background-image: url('');
 }
