@@ -20,7 +20,7 @@ html {
 /* HEADER */
 
 .container-hero {
-    background-color: rgb(46, 48, 54);
+    background-color: rgb(231, 221, 207);
 }
 
 .hero {
@@ -28,4 +28,47 @@ html {
     justify-content: space-between;
     align-items: center;
     padding: 2rem 0;
+}
+
+.container-logo {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.container-logo i {
+    font-size: 3rem;
+    color: rgb(170, 176, 192);
+}
+
+.container-logo h1 a {
+    text-decoration: none;
+    color: rgb(170, 176, 192);
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+
+.container-user {
+    display: flex;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.container-user .fa-user{
+    font-size: 3rem;
+    color: rgb(170, 176, 192);
+    padding-right: 2.5rem;
+    border-right: 1px solid rgb(170, 176, 192);
+}
+
+.container-user .fa-basket-shopping {
+    font-size: 3rem;
+    color: rgb(170, 176, 192);
+    padding-left: 1rem;
+}
+
+.content-shopping-cart {
+    display: flex;
+    flex-direction: column;
 }
