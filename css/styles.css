@@ -357,7 +357,7 @@ html {
 .card-product {
     background-color: var(--white);
     padding: 2rem 3rem;
-    border-radius: 5rem;
+    border-radius: .5rem;
     cursor: pointer;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
 }
@@ -368,4 +368,109 @@ html {
 
 .container-img img {
     width: 100%;
+}
+
+.container-img .discount {
+    position: absolute;
+    left: 0;
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 2px 1.2rem;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+}
+
+.card-product:hover .discount {
+    background-color: #000;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    position: absolute;
+    top: 0;
+    right: -3rem;
+    z-index: -1;
+    transition: all .4s ease;
+}
+
+.button-group span {
+    border: 1px solid var(--blue);
+    
+}
+
+.content-card-product {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, min-content);
+    row-gap: 1rem;
+}
+
+.stars {
+    grid-row: 1/2;
+    grid-column: 1/-1;
+}
+
+.stars i{
+    font-size: 1.3rem;
+    color: var(--blue);
+}
+
+.content-card-product h3 {
+    grid-row: 2/3;
+    grid-column: 1/-1;
+
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.content-card-product h3:hover {
+    color: var(--blue);
+}
+
+.add-cart {
+    justify-self: start;
+    border: 2px solid var(--blue);
+    padding: 1rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .4s ease;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-cart:hover {
+    background-color: var(--blue);
+}
+
+.add-cart i {
+    font-size: 1.5rem;
+    color: var(--blue);
+}
+
+.add-cart:hover i{
+    color: var(--white);
+}
+
+.content-card-product .price {
+    justify-self: end;
+    align-self: center;
+
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.content-card-product .price span {
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-decoration: line-through;
+    color: var(--green);
+    margin-left: .5rem;
 }
