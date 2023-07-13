@@ -20,13 +20,20 @@ html {
     box-sizing: border-box;
 }
 
-/* UTILIDADES */
+/** UTILIDADES */
+
 .container {
     max-width: 120rem;
     margin: 0 auto;
 }
 
-/* HEADER */
+.heading-1 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 3rem;
+}
+
+/** HEADER */
 
 .container-hero {
     background-color: var(--white);
@@ -84,7 +91,7 @@ html {
     color: var(--black);
 }
 
-/* NAVBAR */
+/** NAVBAR */
 
 .container-navbar {
     background-color: var(--blue);
@@ -181,7 +188,7 @@ html {
     color: var(--white);
 }
 
-/* BANNER */
+/** BANNER */
 
 .banner {
     background-image: linear-gradient(100deg, #000, #00000020), url('/img/banner.png');
@@ -221,3 +228,94 @@ html {
     border-radius: 3rem;
     font-size: 1.1rem;
 }
+
+/** MAIN CONTENT */
+
+.main-content{
+    background-color: var(--grey);
+
+}
+
+/** CATEGORIES */
+
+.top-categories {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.container-categories {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+
+.card-category {
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+    gap: 2rem;
+}
+
+.category-tienda {
+    background-image:  linear-gradient(#00000080, #00000080), url('/img/category-tienda.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.category-arriendos {
+    background-image:  linear-gradient(#00000080, #00000080), url('/img/category-arriendo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}  
+
+.category-mantenimiento {
+    background-image:  linear-gradient(#00000080, #00000080), url('/img/category-mantenimiento.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card-category p {
+    font-size: 2.5rem;
+    color: var(--white);
+    text-transform: capitalize;
+    position: relative;
+}
+
+.card-category p::after {
+    content: '';
+    width: 2.5rem;
+    height: 2px;
+    background-color: var(--white);
+    position: absolute;
+    bottom: -1rem;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.card-category span {
+    font-size: 1.6rem;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.card-category span:hover {
+    color: var(--white);
+}
+
+/** TOP PRODUCTS */
+
+.top-products {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
