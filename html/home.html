@@ -27,7 +27,33 @@
                 </div>
 
                 <div class="container-user">
-                    <i class="fa-solid fa-user"></i>
+                    <i class="fa-solid fa-user" onclick="document.getElementById('id01').style.display='block'" style="width:auto;"></i>
+                    <div id="id01" class="modal">
+  
+                        <form class="modal-content animate" action="/action_page.php" method="post">
+                          <div class="imgcontainer">
+                            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                          </div>
+                      
+                          <div class="container">
+                            <label for="uname"><b>Usuario</b></label>
+                            <input type="text" placeholder="Ingrese Nombre" name="uname" required>
+                      
+                            <label for="psw"><b>Constraseña</b></label>
+                            <input type="password" placeholder="Ingrese Contraseña" name="psw" required>
+                              
+                            <button type="submit">Login</button>
+                            <label>
+                              <input type="checkbox" checked="checked" name="remember"> Recuerdame
+                            </label>
+                          </div>
+                      
+                          <div class="container" style="background-color:#f1f1f1">
+                            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancelar</button>
+                            <span class="psw">Olvidó su <a href="#">contraseña?</a></span>
+                          </div>
+                        </form>
+                      </div>
                     <i class="fa-solid fa-basket-shopping"></i>
 
                     <div class="content-shopping-cart">
