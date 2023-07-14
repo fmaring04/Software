@@ -769,11 +769,23 @@ html {
 
 /** ADICIONAL*/
 
+.container-about {
+    background-color: var(--grey);
+    display: flex;
+    padding: 10rem;
+    
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.container-about h1 {
+    position: top;
+}
+
 .about {
     font-size: 2rem;
     text-align: center;
+    position: bottom;
 }
 
-.container-about {
-    
-}
+
