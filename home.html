@@ -31,11 +31,20 @@
                 <div class="container-user">
                     <i class="fa-solid fa-user" onclick="document.getElementById('id01').style.display='block'"
                         style="width:auto;"></i>
+
                     <div id="id01" class="modal">
+
+                        <button id="Btniniciar" onclick="document.getElementById('id02').style.display='block' ">Iniciar Sesion</button>
+                        <button id="Btniniciar" onclick="document.getElementById('id03').style.display='block' ">Registro de Sesion</button>
+
+                    </div>
+
+
+                    <div id="id02" class="modal">
 
                         <form class="modal-content animate" action="/action_page.php" method="post">
                             <div class="imgcontainer">
-                                <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                                <span onclick="document.getElementById('id02').style.display='none'" class="close"
                                     title="Close Modal">&times;</span>
                             </div>
 
@@ -57,7 +66,44 @@
                                     class="cancelbtn">Cancelar</button>
                                 <span class="psw">Olvidó su <a href="#">contraseña?</a></span>
                             </div>
+
+                            <div class="container" style="background-color: #f1f1f1;">
+
+                            </div>
+
+
                         </form>
+                    </div>
+                    <div id="id03" class="modal">
+
+                        <form class="modal-content animate" action="/action_page.php" method="post">
+                            <div class="imgcontainer">
+                                <span onclick="document.getElementById('id03').style.display='none'" class="close"
+                                    title="Close Modal">&times;</span>
+                            </div>
+
+                            <div class="container">
+                                <label for="uname"><b>chuplalo</b></label>
+                                <input type="text" placeholder="Ingrese Nombre" name="uname" required>
+
+                                <label for="psw"><b>Constraseña</b></label>
+                                <input type="password" placeholder="Ingrese Contraseña" name="psw" required>
+
+                                <button type="submit">Login</button>
+                                <label>
+                                    <input type="checkbox" checked="checked" name="remember"> Recuerdame
+                                </label>
+                            </div>
+
+                            <div class="container" style="background-color:#f1f1f1">
+                                <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                                    class="cancelbtn">Cancelar</button>
+                                <span class="psw">Olvidó su <a href="#">contraseña?</a></span>
+                            </div>
+
+                            <div class="container" style="background-color: #f1f1f1;">
+
+                            </div>
                     </div>
                     <i class="fa-solid fa-basket-shopping"></i>
 
@@ -65,32 +111,31 @@
                         <span class="text"><a href="html/Home-Cliente/Carrito.html">Carrito</a></span>
                         <span class="number">(0)</span>
                     </div>
+
                 </div>
 
             </div>
 
-        </div>
+            <div class="container-navbar">
+                <nav class="navbar container">
+                    <i class="fa-solid fa-bars"></i>
 
-        <div class="container-navbar">
-            <nav class="navbar container">
-                <i class="fa-solid fa-bars"></i>
+                    <ul class="menu">
+                        <li><a href="home.html">Inicio</a></li>
+                        <li><a href="html/Home-Cliente/Catalogo.html">Catalogo</a></li>
+                        <li><a href="html/Home-Cliente/Login.html">Login</a></li>
+                        <li><a href="html/Home-Cliente/SobreNosotros.html">Sobre Nosotros</a></li>
+                        <Li><a href="html/Home-Cliente/Carrito.html"></a></Li>
+                    </ul>
 
-                <ul class="menu">
-                    <li><a href="home.html">Inicio</a></li>
-                    <li><a href="html/Home-Cliente/Catalogo.html">Catalogo</a></li>
-                    <li><a href="html/Home-Cliente/Login.html">Login</a></li>
-                    <li><a href="html/Home-Cliente/SobreNosotros.html">Sobre Nosotros</a></li>
-                    <Li><a href="html/Home-Cliente/Carrito.html"></a></Li>
-                </ul>
-
-                <form class="search-form">
-                    <input type="search" placeholder="Buscar...">
-                    <button class="btn-search">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
-                </form>
-            </nav>
-        </div>
+                    <form class="search-form">
+                        <input type="search" placeholder="Buscar...">
+                        <button class="btn-search">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </form>
+                </nav>
+            </div>
 
     </header>
     <!-- TERMINA HEADER -->
